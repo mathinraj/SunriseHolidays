@@ -50,7 +50,7 @@ function Header() {
             <div className="flex shrink-0 items-center">
               <img
                 className="h-8 w-auto rounded border-white border-2"
-                src="../../public/logo.png"
+                src="/logo.png"
                 alt="Your Company"
               />
             </div>
@@ -61,7 +61,7 @@ function Header() {
                   className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
                   aria-current="page"
                 >
-                  Offerings
+                  Services
                 </a>
                 <a
                   href="#"
@@ -87,16 +87,11 @@ function Header() {
                 >
                   Our Team
                 </a>
-                <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  Book Now
-                </a>
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Book Now</button>
+          {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className="relative z-1 -mr-3">
               <div>
                 <button
@@ -109,7 +104,7 @@ function Header() {
                   <span className="sr-only">Manoj K Shanmugam</span>
                   <img
                     className="size-8 rounded-full"
-                    src="../../public/mathin_portrait.jfif"
+                    src="/mathin_portrait.jfif"
                     alt="Manoj K Shanmugam"
                   />
                 </button>
@@ -127,13 +122,13 @@ function Header() {
                   <span className="sr-only">Mathinraj R</span>
                   <img
                     className="size-8 rounded-full"
-                    src="../../public/mathin_portrait.jfif"
+                    src="mathin_portrait.jfif"
                     alt="Mathinraj R"
                   />
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="sm:hidden" id="mobile-menu">
@@ -143,7 +138,7 @@ function Header() {
             className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
             aria-current="page"
           >
-            Offerings
+            Services
           </a>
           <a
             href="#"
@@ -168,13 +163,7 @@ function Header() {
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
             Our Team
-          </a>
-          <a
-            href="#"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >
-            Book Now
-          </a>
+          </a>          
         </div>
       </div>
     </nav>

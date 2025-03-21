@@ -11,7 +11,7 @@ const Footer = () => {
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="../../public/icon_png.png"
+              src="/icon_png.png"
               className="h-8"
               alt="Sunrise Holidays Logo"
             />
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © {currentYear} <a className="hover:underline">Sunrise Holidays</a>.
+          © {currentYear} <a className="hover:underline">Team Sunrise Holidays</a>.
           All Rights Reserved.
         </span>
       </div>

@@ -1,14 +1,23 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from "./components/header";
 import Footer from "./components/Footer";
+import Gallery from './components/Gallery';
+import About from './components/About';
+import CallbackForm from './components/CallbackForm';
+import WhyUs from './components/WhyUs';
+import OurTeam from './components/OurTeam';
 
 function App() {
 
   return (
-    <div className='app-container'>
+    <div className='app-container bg-gray-900'>
       <Header/>
+      <About/>
+      <WhyUs/>
+      {/* <Gallery/> */}
+      <OurTeam/>
+      <CallbackForm/>
       <Footer/>
     </div>
   )
