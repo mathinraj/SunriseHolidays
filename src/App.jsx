@@ -7,6 +7,8 @@ import About from './components/About';
 import CallbackForm from './components/CallbackForm';
 import WhyUs from './components/WhyUs';
 import OurTeam from './components/OurTeam';
+import Testimonials from './components/Testimonials';
+
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
       <Header/>
       <About/>
       <WhyUs/>
+      <Testimonials/>
       {/* <Gallery/> */}
       <OurTeam/>
       <CallbackForm/>
