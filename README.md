@@ -7,3 +7,7 @@ Gallery - bus images
 Why us - reviews ( Testimonials)
 <!-- Our team - MS, MR -->
 <!-- Book Now - form -->
+
+
+ Add Animations
+ Add a Loading Spinner
