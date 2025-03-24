@@ -21,13 +21,13 @@ const Footer = () => {
           </a>
           <section className="mx-12 my-0 text-2xl">
             <a href="tel:+919578783456" role="button">
-              <i class="fa-solid fa-phone mx-6"></i>
+              <i className="fa-solid fa-phone mx-6"></i>
             </a>
             <a
               href="https://www.instagram.com/_sunrise_holidays_/"
               role="button"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </section>
         </div>

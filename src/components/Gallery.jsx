@@ -1,4 +1,3 @@
-// src/components/Gallery.jsx
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -14,7 +13,7 @@ const Gallery = () => {
     <section className="py-1 bg-gray-900" id="gallery">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Our Gallery</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Our Gallery</h2>
         </div>
         <Carousel
           showThumbs={false}
@@ -27,7 +26,7 @@ const Gallery = () => {
         >
           {images.map((image, index) => (
             <div key={index}>
-              <img src={image} alt={`Gallery Image ${index + 1}`} className="w-full h-96 object-cover" />
+              <img src={image} alt={`Gallery Image ${index + 1}`} className="w-full h-64 sm:h-96 object-cover" />
             </div>
           ))}
         </Carousel>

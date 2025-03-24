@@ -1,4 +1,3 @@
-// src/components/Services.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -24,11 +23,11 @@ const Services = () => {
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
-          className="text-4xl font-bold text-center text-white mb-8"
+          className="text-3xl sm:text-4xl font-bold text-center text-white mb-8"
         >
           Why Choose Us?
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}

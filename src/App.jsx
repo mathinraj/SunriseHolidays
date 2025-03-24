@@ -1,5 +1,5 @@
 import './App.css';
-import Header from "./components/header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Gallery from './components/Gallery';
 import CallbackForm from './components/CallbackForm';
@@ -9,9 +9,7 @@ import Testimonials from './components/Testimonials';
 import Hero from './components/Hero';
 import Services from './components/Services';
 
-
 function App() {
-
   return (
     <div className='app-container bg-gray-900'>
       <Header/>
@@ -27,4 +25,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

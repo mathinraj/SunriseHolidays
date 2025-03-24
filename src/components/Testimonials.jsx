@@ -1,4 +1,3 @@
-// src/components/Testimonials.jsx
 import React, { useEffect } from "react";
 import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
 
@@ -102,7 +101,7 @@ const Testimonials = () => {
   return (
     <section className="bg-gray-900 py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-4xl font-bold text-white mb-8">
+        <h2 className="text-center text-3xl sm:text-4xl font-bold text-white mb-8">
           Read Trusted Reviews from Our Customers
         </h2>
         <div id="keen-slider" className="keen-slider">

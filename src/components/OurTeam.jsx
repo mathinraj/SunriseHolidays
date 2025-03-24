@@ -1,4 +1,3 @@
-// src/components/OurTeam.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -29,16 +28,16 @@ const OurTeam = () => {
       viewport={{ once: true }}
       className="py-16 bg-gray-900"
     >
-      <div className="container mx-auto px-20">
+      <div className="container mx-auto px-4 sm:px-20">
         <motion.h2
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
-          className="text-4xl font-bold text-center mb-8"
+          className="text-3xl sm:text-4xl font-bold text-center mb-8"
         >
           Our Team
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {Team.map((person, index) => (
             <motion.div
               key={index}
@@ -47,7 +46,7 @@ const OurTeam = () => {
               transition={{ delay: 0.4 + index * 0.2, duration: 1 }}
               className="bg-white pb-4 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="h-80 overflow-hidden rounded-t-lg">
+              <div className="h-64 sm:h-80 overflow-hidden rounded-t-lg">
                 <img
                   src={person.image}
                   alt={person.name}

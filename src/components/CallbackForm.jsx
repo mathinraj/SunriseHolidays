@@ -1,4 +1,3 @@
-// src/components/CallbackForm.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -16,8 +15,18 @@ const CallbackForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+  
+    const { name, phone, planningLocation } = formData;
+  
+    // Construct the WhatsApp API URL with pre-filled message
+    const whatsappUrl = `https://wa.me/919489214415?text=${encodeURIComponent(
+      `Hello, my name is ${name}. My phone number is ${phone}, and I'm planning for a location at ${planningLocation}.`
+    )}`;
+  
+    // Redirect to WhatsApp
+    window.open(whatsappUrl, "_blank");
   };
+  
 
   return (
     <motion.section
@@ -26,14 +35,14 @@ const CallbackForm = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="bg-gray-900"
+      className="bg-gray-900 py-16"
     >
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
-          className="text-3xl font-bold text-center text-white mb-8"
+          className="text-3xl sm:text-4xl font-bold text-center text-white mb-8"
         >
           Request a Callback
         </motion.h2>

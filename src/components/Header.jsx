@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import React, { useState, useEffect } from "react";
 
 function Header() {
@@ -37,11 +36,11 @@ function Header() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
               <a href="#hero">
-              <img
-                className="h-8 w-auto rounded border-white border-2"
-                src="/logo.png"
-                alt="Sunrise Holidays"
-              />
+                <img
+                  className="h-8 w-auto rounded border-white border-2"
+                  src="/logo.png"
+                  alt="Sunrise Holidays"
+                />
               </a>
             </div>
             <div className="hidden sm:ml-6 sm:block">
@@ -68,7 +67,6 @@ function Header() {
                 >
                   Gallery
                 </a>
-
                 <a
                   href="#ourteam"
                   onClick={() => scrollToSection("ourteam")}
