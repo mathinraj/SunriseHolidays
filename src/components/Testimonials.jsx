@@ -141,7 +141,7 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        <div className="-mt-5 flex items-center justify-center gap-4">
+        <div className="mt-3 flex items-center justify-center gap-4">
           <button
             aria-label="Previous slide"
             id="keen-slider-previous"
