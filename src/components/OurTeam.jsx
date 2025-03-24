@@ -6,16 +6,16 @@ const OurTeam = () => {
     {
       name: "Manoj K Shanmugam",
       role: "CEO / Founder",
-      image: "/mathin_portrait.jfif",
-      linkedin: "#",
-      insta: "#",
+      image: "/manoj.png",
+      linkedin: "https://www.linkedin.com/in/manojkshanmugam/",
+      insta: "https://instagram.com/avs_manoj/",
     },
     {
       name: "Mathinraj Ramasamy",
       role: "IT Team",
-      image: "/mathin_portrait.jfif",
-      linkedin: "#",
-      insta: "#",
+      image: "/mathin.png",
+      linkedin: "https://www.linkedin.com/in/mathinraj/",
+      insta: "https://instagram.com/mathin_spm/",
     },
   ];
 

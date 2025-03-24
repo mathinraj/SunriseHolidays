@@ -2,6 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <motion.section
       id="hero"
@@ -25,9 +31,10 @@ const Hero = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           href="#"
+          onClick={() => scrollToSection("callbackform")}
           className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800"
         >
-          Book Now
+          <i className="fa-solid fa-phone"></i> Request Callback
         </motion.a>
       </motion.div>
     </motion.section>

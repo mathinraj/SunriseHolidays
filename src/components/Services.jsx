@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const Services = () => {
   const services = [
-    { title: "Custom Tours", description: "Tailored tours to suit your preferences.", icon: "fa-globe" },
-    { title: "Group Tours", description: "Join our group tours and meet new people.", icon: "fa-users" },
-    { title: "Adventure Tours", description: "Thrilling adventures for adrenaline junkies.", icon: "fa-mountain" },
-    { title: "Luxury Tours", description: "Experience the world in luxury.", icon: "fa-gem" },
+    { title: "Custom Tours", description: "From college adventures to corporate retreats, we craft unforgettable journeys tailored to your needs.", icon: "fa-globe" },
+    { title: "Group Tours", description: "Explore new horizons with ease – we handle the planning, so you can focus on the experience.", icon: "fa-users" },
+    { title: "Adventure Tours", description: "Whether it’s a spiritual pilgrimage or an industrial tour, we bring your travel dreams to life.", icon: "fa-mountain" },
+    { title: "Luxury Tours", description: "Your preferred location, our expert planning – let’s create memories that last a lifetime.", icon: "fa-gem" },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Services = () => {
               className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
             >
               <i className={`fas ${service.icon} text-4xl text-blue-700 mb-4`}></i>
-              <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
             </motion.div>
           ))}
