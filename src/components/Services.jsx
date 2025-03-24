@@ -1,12 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const services = [
-    { title: "Custom Tours", description: "From college adventures to corporate retreats, we craft unforgettable journeys tailored to your needs.", icon: "fa-globe" },
-    { title: "Group Tours", description: "Explore new horizons with ease – we handle the planning, so you can focus on the experience.", icon: "fa-users" },
-    { title: "Adventure Tours", description: "Whether it’s a spiritual pilgrimage or an industrial tour, we bring your travel dreams to life.", icon: "fa-mountain" },
-    { title: "Luxury Tours", description: "Your preferred location, our expert planning – let’s create memories that last a lifetime.", icon: "fa-gem" },
+    { boldText: "Corporate Team Outings", icon: "fa-users" },
+    { boldText: "College Trips", icon: "fa-graduation-cap" },
+    { boldText: "Family Tours", icon: "fa-home" },
+    { boldText: "Industrial Visits", icon: "fa-industry" },
+    { boldText: "Devotional Trips", icon: "fa-pray" },
   ];
 
   return (
@@ -25,9 +26,9 @@ const Services = () => {
           transition={{ delay: 0.2, duration: 1 }}
           className="text-3xl sm:text-4xl font-bold text-center text-white mb-8"
         >
-          Why Choose Us?
+          What We Offer?
         </motion.h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -36,9 +37,13 @@ const Services = () => {
               transition={{ delay: 0.4 + index * 0.2, duration: 1 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
             >
-              <i className={`fas ${service.icon} text-4xl text-blue-700 mb-4`}></i>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <i
+                className={`fas ${service.icon} text-4xl text-blue-700 mb-4`}
+              ></i>
+              {/* <h3 className="text-xl font-bold mb-2 text-gray-900">
+                {service.title}
+              </h3> */}
+              <p className="text-gray-600">{service.boldText}</p>
             </motion.div>
           ))}
         </div>
